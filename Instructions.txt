@@ -1,6 +1,6 @@
 1. Open "Dockerfile".
 2. In the git clone and git pull URLs input your GitHub user name and personal access token.
-3. In the last line see parameter "-Ddomain=loc". After "=" sign input an environment you want the tests to be running on.
+3. In the last line see parameter "-Ddomain=loc". After "=" sign input an environment you want the tests to be running on (loc, dev,io).
 4. Open a new Terminal in DockerTests folder.
 5. $ docker build . -t api_tests - build an images from Dockerfile.
 6. $ docker images - make sure that the image named "api_tests" is built.
