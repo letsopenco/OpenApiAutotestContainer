@@ -1,0 +1,16 @@
+1. Open "Dockerfile".
+2. In the git clone and git pull URLs input your GitHub user name and personal access token.
+3. In the last line see parameter "-Ddomain=loc". After "=" sign input an environment you want the tests to be running on.
+4. Open a new Terminal in "api-tests" folder.
+5. $ docker build . -t api_tests - build an images from Dockerfile.
+6. $ docker images - make sure that the image named "api_tests" is built.
+7. $ docker run -it -d api_tests - create a new container based on "api_tests" image.
+8. $ docker ps - make sure that our container is running.
+9. $ docker compose up - run tests.
+
+Note 1.
+Once you built a new container, next time to run this particular container you need to execute:
+$ docker start <container_name> or <container_id>.
+
+Note 2.
+If you are creating an image with different name as specified in the 5th step, you have to go to "docker-compose.yml" file and change image name.
