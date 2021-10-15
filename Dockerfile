@@ -22,4 +22,4 @@ RUN cp Open-API-tests/settings.xml /.m2
 
 WORKDIR /Open-API-tests
 
-CMD ["mvn", "clean", "-DsuiteXmlFile=src/test/resources/SmokeTest.xml", "-Ddomain=loc", "test"]
+CMD ["mvn", "clean", "-DsuiteXmlFile=src/test/resources/SmokeTest.xml", "-Ddomain=dev", "test"]
