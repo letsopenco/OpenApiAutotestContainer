@@ -12,7 +12,7 @@ RUN git init
 
 RUN git clone https://RT715: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@github.com/letsopenco/Open-API-tests.git
 
-RUN git pull https://user_name:personal_access_token@github.com/letsopenco/Open-API-tests.git
+RUN git pull https://RT715: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@github@github.com/letsopenco/Open-API-tests.git
 
 RUN cp Open-API-tests/settings.xml /etc/maven2
 
