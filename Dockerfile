@@ -10,7 +10,7 @@ RUN apt -y install maven
 
 RUN git init
 
-RUN git clone https://user_name:personal_access_token@github.com/letsopenco/Open-API-tests.git
+RUN git clone https://RT715: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@github.com/letsopenco/Open-API-tests.git
 
 RUN git pull https://user_name:personal_access_token@github.com/letsopenco/Open-API-tests.git
 
