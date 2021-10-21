@@ -26,4 +26,6 @@ ENV domain=loc
 
 ENV fullLog=true
 
-CMD ["mvn", "clean", "-DsuiteXmlFile=src/test/resources/SmokeTest.xml", "-Ddomain=loc", "-DfullLogs=false", "test"]
+ENV protocol=http
+
+CMD ["mvn", "clean", "-DsuiteXmlFile=src/test/resources/SmokeTest.xml", "-Dprotocol=http", "-Ddomain=loc", "-DfullLogs=false", "test"]
