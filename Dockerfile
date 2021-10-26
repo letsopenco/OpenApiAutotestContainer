@@ -1,4 +1,4 @@
-FROM  ibmjava as build
+FROM rt715/open:app_api_tests as build
 
 RUN apt update
 
@@ -10,9 +10,9 @@ RUN apt -y install maven
 
 RUN git init
 
-RUN git clone https://git_usermname:git_token@github.com/letsopenco/Open-API-tests.git
+RUN git clone https://git_user_name:git_access_token@github.com/letsopenco/Open-API-tests.git
 
-RUN git pull https://git_usermname:git_token@github.com/letsopenco/Open-API-tests.git
+RUN git pull https://git_user_name:git_access_token@github.com/letsopenco/Open-API-tests.git
 
 RUN cp Open-API-tests/settings.xml /etc/maven2
 
